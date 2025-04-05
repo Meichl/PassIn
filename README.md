@@ -1,22 +1,58 @@
-# Pass In
-O pass.in é uma aplicação de gestão de participantes em eventos presenciais.
-A ferramenta permite que o organizador cadastre um evento e abra uma página pública de inscrição.
-Os participantes inscritos podem emitir uma credencial para check-in no dia do evento.
-O sistema fará um scan da credencial do participante para permitir a entrada no evento.
+# 🎫 Pass In
 
-Requisitos
-Requisitos funcionais
-- O organizador deve poder cadastrar um novo evento;
-- O organizador deve poder visualizar dados de um evento;
-- O organizador deve poser visualizar a lista de participantes;
-- O participante deve poder se inscrever em um evento;
-- O participante deve poder visualizar seu crachá de inscrição;
-- O participante deve poder realizar check-in no evento;
-_________________________________________________________________________
-Regras de negócio
-- O participante só pode se inscrever em um evento uma única vez;
-- O participante só pode se inscrever em eventos com vagas disponíveis;
-- O participante só pode realizar check-in em um evento uma única vez;
-__________________________________________________________________________
-Requisitos não-funcionais
-- O check-in no evento será realizado através de um QRCode;
+**Pass In** é uma aplicação simples de **gestão de participantes em eventos presenciais**. Organizadores podem cadastrar eventos e acompanhar os participantes. Os inscritos recebem uma credencial com **QRCode** para realizar check-in no dia do evento.
+
+---
+
+## 📌 Funcionalidades Principais
+
+### Para Organizadores
+
+- Criar novos eventos
+- Visualizar dados de um evento
+- Listar participantes inscritos
+
+### Para Participantes
+
+- Inscrever-se em eventos
+- Visualizar o crachá de inscrição
+- Realizar check-in via QRCode
+
+---
+
+## ✅ Regras de Negócio
+
+- Cada participante pode se inscrever **apenas uma vez por evento**
+- Inscrições só são permitidas **enquanto houver vagas**
+- O check-in pode ser feito **apenas uma vez por participante**
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **TypeScript**
+- **Node.js**
+- **Fastify**
+- **SQLite**
+- **QRCode**
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+- Node.js 18+
+
+### Passos
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/pass-in.git
+cd pass-in
+
+# Instale as dependências
+npm install
+
+# Execute o servidor
+npm run dev
